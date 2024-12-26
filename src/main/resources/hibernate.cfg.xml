@@ -1,0 +1,14 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:3306/universities</property>
+        <property name="hibernate.connection.username">localhost</property>
+        <property name="hibernate.connection.password">12345</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="org.example.domain.University"/>
+        <mapping class="org.example.domain.Faculty"/>
+        <mapping class="org.example.domain.Speciality"/>
+    </session-factory>
+</hibernate-configuration>
